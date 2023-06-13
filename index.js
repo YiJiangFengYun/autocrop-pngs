@@ -5,6 +5,8 @@ import jimp from "jimp";
 
 var dirSrc = process.argv[2];
 var tgtSrc = process.argv[3];
+await fsExtra.ensureDir(tgtSrc);
+await fsExtra.emptyDir(tgtSrc);
 
 var files = await fsExtra.readdir(dirSrc);
 for (var file of files)
