@@ -8,7 +8,7 @@ await fsExtra.ensureDir(dirOutput);
 await fsExtra.emptyDir(dirOutput);
 
 // 设置透明边框的宽度
-const borderWidth = 20;
+const borderWidth = 10;
 
 var files = await fsExtra.readdir(dirSrc);
 for (var file of files)
